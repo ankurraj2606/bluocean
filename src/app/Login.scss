@@ -1,0 +1,117 @@
+.main-container {
+  @extend %flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 4% 8%;
+
+  .image-container {
+    width: 50%;
+    height: 80%;
+    background-color: gray;
+  }
+
+  .login-container {
+    width: 100%;
+    @extend %flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .login-title {
+    text-align: center;
+    font-size: 1.875rem; // Adapt to your font scale
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+  .login-description {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: semibold;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 3rem;
+    position: relative;
+
+    label {
+      position: absolute;
+      top: -13px;
+      left: 12px;
+      color: black;
+      z-index: 100;
+      background-color: white;
+      padding: 0 10px;
+    }
+
+    input {
+      width: 90%;
+      border-radius: 0.5rem;
+      border: 1px solid #e0e0e0;
+      padding: 1.5rem 1rem;
+      font-size: 0.875rem; // Adapt to your font scale
+      background-color: white;
+      color: black;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .form-group.pass {
+    margin-bottom: 1rem;
+  }
+
+  .forgot-pass {
+    text-align: right;
+    color: blue;
+    text-decoration: underline;
+    margin-bottom: 5rem;
+  }
+
+  .submit-button {
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .signup-link {
+    text-align: center;
+    font-size: 0.875rem; // Adapt to your font scale
+    color: #6c757d;
+
+    a {
+      color: black;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Mixins (optional for code reusability)
+%flex {
+  display: flex;
+}

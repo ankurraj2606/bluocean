@@ -1,0 +1,40 @@
+.card2 {
+  font-size: 14px;
+  padding: 8px 0;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 1px rgba(245, 245, 220, 0.5);
+  .card2-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+    color: black;
+    padding: 16px 0;
+    .card2-header_left {
+      padding-left: 16px;
+      span {
+        background-color: white;
+        padding: 4px 8px;
+        margin-left: 8px;
+      }
+    }
+    .card2-header_right {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      .checkbox {
+        display: flex;
+        span {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+  .card-body {
+    color: black;
+    padding: 12px 0px;
+    p {
+      padding-left: 16px;
+    }
+  }
+}

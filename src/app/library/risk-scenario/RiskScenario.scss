@@ -1,0 +1,25 @@
+.risk-container-main {
+  display: flex;
+  .risk-container {
+    margin: 1rem;
+    width: 100%;
+    header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      .right {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+
+    .card2-container {
+      width: 100%;
+    }
+  }
+}
